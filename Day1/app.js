@@ -39,4 +39,24 @@ let a = 2;
 let b = 8;
 let count = b ** a;
 count = Math.sqrt(count);
-console.log("Count = " + count);
+// console.log(typeof count);
+// console.log("Count = " + count);
+
+// 4. Hàm Alert():
+// alert("Count = " + count);
+
+// 5. Hàm Prompt(): Cho phép người dùng nhập dữ liệu từ trình duyệt
+// let value = prompt("Bạn nhập gì đó đi ? ");
+// console.log(typeof value);
+// console.log("Đầu vào được nhập là " + value);
+
+// 6. Ép kiểu dữ liệu trong JS: Number -> String: String(Giá trị mà muốn ép kiểu)
+// String -> Number: Number(Giá trị mà ta muốn ép kiểu)
+
+// let t = 10;
+// t = String(t); // t = "10"
+// t = Number(t); // t = 10
+// console.log(typeof t);
+
+let value1 = prompt("Enter number 1 ?");
+let value2 = prompt("Enter number 2 ?");
