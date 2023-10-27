@@ -112,45 +112,143 @@
 
 // 9. Array: Mảng => dùng lưu nhiều giá trị 1 lúc
 
-let food1 = "Bánh rán";
-let food2 = "Mỳ tôm";
-let food3 = "Cơm rang";
+// let food1 = "Bánh rán";
+// let food2 = "Mỳ tôm";
+// let food3 = "Cơm rang";
 
-let list_of_food = ["Bánh rán", "Mỳ tôm", "Cơm rang"];
-console.log(list_of_food);
+// let list_of_food = ["Bánh rán", "Mỳ tôm", "Cơm rang"];
+// console.log(list_of_food);
 
 // Thêm giá trị mới vào trong mảng: tên_mảng.push(value)
-list_of_food.push("Hải sản");
-console.log(list_of_food);
+// list_of_food.push("Hải sản");
+// console.log(list_of_food);
 
 // Cách để lấy từng giá trị trong mảng: tên_mảng[index]
 // Note: index >= 0 và index < chiều dài của mảng
-console.log(list_of_food[3]);
+// console.log(list_of_food[3]);
 
 // 3 = 4 - 1;
 // 3 = list_of_food.length - 1
 
 // Cách lấy ra chiều dải cùa mảnh: tên_mảng.length
-console.log(list_of_food.length);
+// console.log(list_of_food.length);
 
 // Cách để lấy phần tử nằm phía cuổi mảng: tên_mảng[tên_mảng.length - 1]
 
-let score = Number(prompt("Enter score ? "));
+// let score = Number(prompt("Enter score ? "));
 
-if (score > 9 && score <= 10) {
-  alert("Với điểm " + score + " thì sẽ được A+");
-} else if (score > 8 && score <= 9) {
-  alert("Với điểm " + score + " thì sẽ được A");
-} else if (score > 7 && score <= 8) {
-  alert("Với điểm " + score + " thì sẽ được B+");
-} else if (score > 6 && score <= 7) {
-  alert("Với điểm " + score + " thì sẽ được B");
-} else if (score > 5 && score <= 6) {
-  alert("Với điểm " + score + " thì sẽ được C+");
-} else if (score > 4 && score <= 5) {
-  alert("Với điểm " + score + " thì sẽ được C");
-} else if (score <= 4 && score >= 0) {
-  alert("Với điểm " + score + " thì sẽ Đúp");
-} else if (score < 0 || score > 10) {
-  alert("Với điểm " + score + " thì điểm nằm ngoái giới hạn");
+// if (score > 9 && score <= 10) {
+//   alert("Với điểm " + score + " thì sẽ được A+");
+// } else if (score > 8 && score <= 9) {
+//   alert("Với điểm " + score + " thì sẽ được A");
+// } else if (score > 7 && score <= 8) {
+//   alert("Với điểm " + score + " thì sẽ được B+");
+// } else if (score > 6 && score <= 7) {
+//   alert("Với điểm " + score + " thì sẽ được B");
+// } else if (score > 5 && score <= 6) {
+//   alert("Với điểm " + score + " thì sẽ được C+");
+// } else if (score > 4 && score <= 5) {
+//   alert("Với điểm " + score + " thì sẽ được C");
+// } else if (score <= 4 && score >= 0) {
+//   alert("Với điểm " + score + " thì sẽ Đúp");
+// } else if (score < 0 || score > 10) {
+//   alert("Với điểm " + score + " thì điểm nằm ngoái giới hạn");
+// }
+
+// TỰ học: vòng for, object, function trong JS
+
+// 10. Function: 3 kiểu
+// 10.1, Function ko có đầu vào cũng không có return => void function
+
+// let a = 20;
+
+// function sayHello() {
+//   a = 30;
+//   // console.log("123");
+//   // console.log("Hello My friend");
+// }
+
+// sayHello();
+
+// console.log(a);
+
+// 10.2, Function có parameter (hay còn gọi là function có đầu vào)
+// function count(a, b) {
+//   console.log(a + b);
+// }
+
+// count(10, 20);
+
+// 10.3, Return function: Giá trị của function sẽ tương đương với giá trị return
+
+// function fullName(first, mid, last) {
+//   let my_full_name = first + " " + mid + " " + last;
+//   return my_full_name;
+// }
+
+// console.log(fullName("Trần", "Đình", "Trọng"));
+// console.log(fullName("Cao", "Đức", "Khánh"));
+
+// Bài tập chức năng máy tính bỏ túi
+
+function plus(a, b) {
+  return a + b;
 }
+
+function minus(a, b) {
+  return a - b;
+}
+
+function product(a, b) {
+  return a * b;
+}
+
+function divide(a, b) {
+  return a / b;
+}
+
+// let input = prompt("Nhập phép tính"); // +, -, *, /
+
+// if (input == "+") {
+//   let n1 = Number(prompt("Enter n1"));
+//   let n2 = Number(prompt("Enter n2"));
+//   alert("Kết quả: " + plus(n1, n2));
+// } else if (input == "-") {
+//   let n1 = Number(prompt("Enter n1"));
+//   let n2 = Number(prompt("Enter n2"));
+//   alert("Kết quả: " + minus(n1, n2));
+// } else if (input == "*") {
+//   let n1 = Number(prompt("Enter n1"));
+//   let n2 = Number(prompt("Enter n2"));
+//   alert("Kết quả: " + product(n1, n2));
+// } else if (input == "/") {
+//   let n1 = Number(prompt("Enter n1"));
+//   let n2 = Number(prompt("Enter n2"));
+//   alert("Kết quả: " + divide(n1, n2));
+// } else {
+//   alert("Nhập sai vào vui lòng nhập lại");
+// }
+
+// 11. Object(): Đối tượng => Con người
+// Thuộc tính: tên, tuổi, ngày sinh, địa chỉ, ...
+// Chức năng: đi, ăn, ngủ, ỉa, không thuộc bài
+// Khởi tạo 1 đối tượng
+
+let person = {
+  name: "Phương",
+  isHandsome: true,
+  age: 100,
+  favor: ["Bóng đá", "Ăn", "Làm việc tốt"],
+};
+
+console.log(person.favor[0]);
+
+console.log(
+  person.name +
+    " năm nay " +
+    person.age +
+    " tuổi, " +
+    person.name +
+    " có đẹp trai không ? => " +
+    person.isHandsome
+);
