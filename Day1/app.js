@@ -234,21 +234,75 @@ function divide(a, b) {
 // Chức năng: đi, ăn, ngủ, ỉa, không thuộc bài
 // Khởi tạo 1 đối tượng
 
-let person = {
-  name: "Phương",
-  isHandsome: true,
-  age: 100,
-  favor: ["Bóng đá", "Ăn", "Làm việc tốt"],
-};
+// let person = {
+//   name: "Phương",
+//   isHandsome: true,
+//   age: 100,
+//   favor: ["Bóng đá", "Ăn", "Làm việc tốt"],
+// };
 
-console.log(person.favor[0]);
+// console.log(person.favor[0]);
 
-console.log(
-  person.name +
-    " năm nay " +
-    person.age +
-    " tuổi, " +
-    person.name +
-    " có đẹp trai không ? => " +
-    person.isHandsome
-);
+// console.log(
+//   person.name +
+//     " năm nay " +
+//     person.age +
+//     " tuổi, " +
+//     person.name +
+//     " có đẹp trai không ? => " +
+//     person.isHandsome
+// );
+
+// 12. Vòng for: vòng lặp => dùng để thực thi 1 hành động giống nhau nhiều lần
+// for(vị trí bắt đầu; điều kiện để vòng lặp chạy, bước nhảy mỗi lần lặp) {
+
+// }
+
+// let t = 10;
+// t = t + 2; // t = 12
+// t += 1; // t = 12
+// t++; // t = 13
+// console.log(13);
+
+// if (t % 2 == 0) {
+//   console.log("số lẻ");
+// }
+
+// for (let i = 0; i < 10; i++) {
+//   if (i % 2 != 0) {
+//     console.log(i);
+//   }
+// }
+
+// let t = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10;
+
+// let c = 0;
+
+// // c = c + 1; // c = 1
+// // c = c + 2; // c = 3
+// // c = c + 3; // c = 6
+// // c = c + 4;
+
+// for (let i = 1; i <= 10; i++) {
+//   c = c + i;
+// }
+
+// console.log(c);
+
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 2 == 0 && i % 3 == 0) {
+//     console.log(i);
+//   }
+// }
+
+// let array = ["Bún", "Phở", "Nem"];
+// console.log(array[0]);
+// console.log(array[1]);
+// console.log(array[2]);
+
+// for (let i = 0; i < array.length; i++) {
+//   console.log(array[i]);
+// }
+
+let array_number = [34, 8, 9, 64, 19, 100];
+// Tính số lượng phần tử trong mảng trên
