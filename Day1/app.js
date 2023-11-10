@@ -341,6 +341,7 @@ function divide(a, b) {
  * Lây nhiều thông qua class name: getElementsByClassName("Tên class")
  * Thuộc tính innerText: Để lấy ra nội bên trong thẻ
  * Thuộc tính style: thay đổi css của 1 thẻ
+ * Tạo 1 thẻ mới bên HTML thông quan DOM
  */
 
 let myElement = document.getElementById("myFirstElement");
@@ -357,12 +358,29 @@ console.log(myElement.innerText);
  */
 
 let myText = document.getElementsByClassName("myText");
-console.log(myText);
-console.log(myText[0]);
-console.log(myText[1]);
+for (let i = 0; i < myText.length; i++) {
+  console.log(myText[i].innerText);
+
+  myText[i].style.backgroundColor = "pink";
+}
 
 let list_name = ["Phương", "Minh", "Bách", "Sơn", "Khánh"];
 for (let i = 0; i < list_name.length; i++) {
   console.log(list_name[i]);
 }
 // Dùng vòng for in ra tất cả các phần tử trong mảng trên
+
+let newDiv = document.createElement("div");
+// newDiv.innerText = "Thẻ div mới được tạo";
+newDiv.style.fontWeight = "bold";
+newDiv.style.width = "600px";
+newDiv.style.height = "400px";
+newDiv.style.backgroundColor = "pink";
+
+document.body.appendChild(newDiv);
+
+let newImage = document.createElement("img");
+newImage.src =
+  "https://codelearnstorage.s3.amazonaws.com/CodeCamp/CodeCamp/Upload/Course/c6b8d5cfe9ff4b56887e8751d37a1c61.png";
+newImage.style.width = "200px";
+newDiv.appendChild(newImage);
