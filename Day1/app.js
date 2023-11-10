@@ -283,7 +283,7 @@ function divide(a, b) {
 // // c = c + 3; // c = 6
 // // c = c + 4;
 
-// for (let i = 1; i <= 10; i++) {
+// for (let i = 1; i <= 10; i = i + 5) {
 //   c = c + i;
 // }
 
@@ -303,6 +303,66 @@ function divide(a, b) {
 // for (let i = 0; i < array.length; i++) {
 //   console.log(array[i]);
 // }
+// let c = 0;
+// let array_number = [34, 8, 9, 64, 19, 100];
+// for (let i = 0; i < array_number.length; i++) {
+//   c = c + array_number[i];
+// }
 
-let array_number = [34, 8, 9, 64, 19, 100];
+// console.log(c);
+
 // Tính số lượng phần tử trong mảng trên
+
+// Tính giai thừa của 1 số: 5 = 1x2x3x4x5
+
+// let number_input = 5;
+// let temp = 1;
+// for (let i = 1; i <= 5; i++) {
+//   temp = temp * i;
+// }
+
+// console.log(temp);
+
+// let list_name = ["Phương", "Minh", "Bách", "Sơn", "Khánh"];
+// let list_name_reverse = [];
+// for (let i = list_name.length - 1; i >= 0; i--) {
+//   list_name_reverse.push(list_name[i]);
+// }
+
+// console.log(list_name_reverse);
+
+// Dùng vòng for tạo 1 mảng mới, yêu cầu mảng mới này phải chứa các tên theo
+// thứ tự đảo ngược
+// Đầu ra: ["Khánh", "Sơn", "Bách", "Minh", "Phương"]
+
+// 13. DOM:
+/**
+ * Lấy 1 thẻ thông qua id: getElementById("Tên của id")
+ * Lây nhiều thông qua class name: getElementsByClassName("Tên class")
+ * Thuộc tính innerText: Để lấy ra nội bên trong thẻ
+ * Thuộc tính style: thay đổi css của 1 thẻ
+ */
+
+let myElement = document.getElementById("myFirstElement");
+console.log(myElement);
+myElement.innerText = "Nguyễn Danh Phương";
+myElement.style.color = "red";
+myElement.style.backgroundColor = "yellow";
+console.log(myElement.innerText);
+
+/**
+ * Tạo 1 thẻ p có id là myAge
+ * Dùng dom trong jS để đổi màu chữ, đổi cỡ chữ, đổi width và height của thẻ đó
+ *
+ */
+
+let myText = document.getElementsByClassName("myText");
+console.log(myText);
+console.log(myText[0]);
+console.log(myText[1]);
+
+let list_name = ["Phương", "Minh", "Bách", "Sơn", "Khánh"];
+for (let i = 0; i < list_name.length; i++) {
+  console.log(list_name[i]);
+}
+// Dùng vòng for in ra tất cả các phần tử trong mảng trên
