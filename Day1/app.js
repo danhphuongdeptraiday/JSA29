@@ -358,16 +358,19 @@ console.log(myElement.innerText);
  */
 
 let myText = document.getElementsByClassName("myText");
-for (let i = 0; i < myText.length; i++) {
-  console.log(myText[i].innerText);
+console.log(myText);
+console.log(myText[0].innerText);
+console.log(myText[1].innerText);
+// for (let i = 0; i < myText.length; i++) {
+//   console.log(myText[i].innerText);
 
-  myText[i].style.backgroundColor = "pink";
-}
+//   myText[i].style.backgroundColor = "pink";
+// }
 
-let list_name = ["Phương", "Minh", "Bách", "Sơn", "Khánh"];
-for (let i = 0; i < list_name.length; i++) {
-  console.log(list_name[i]);
-}
+// let list_name = ["Phương", "Minh", "Bách", "Sơn", "Khánh"];
+// for (let i = 0; i < list_name.length; i++) {
+//   console.log(list_name[i]);
+// }
 // Dùng vòng for in ra tất cả các phần tử trong mảng trên
 
 let newDiv = document.createElement("div");
@@ -384,3 +387,5 @@ newImage.src =
   "https://codelearnstorage.s3.amazonaws.com/CodeCamp/CodeCamp/Upload/Course/c6b8d5cfe9ff4b56887e8751d37a1c61.png";
 newImage.style.width = "200px";
 newDiv.appendChild(newImage);
+
+let newA;
