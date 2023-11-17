@@ -356,11 +356,10 @@ console.log(myElement.innerText);
  * Dùng dom trong jS để đổi màu chữ, đổi cỡ chữ, đổi width và height của thẻ đó
  *
  */
-
-let myText = document.getElementsByClassName("myText");
-console.log(myText);
-console.log(myText[0].innerText);
-console.log(myText[1].innerText);
+// //////////////////////////////////////////
+// let myText = document.getElementsByClassName("myText");
+// myText[0].style.color = "red";
+// myText[1].style.color = "pink";
 // for (let i = 0; i < myText.length; i++) {
 //   console.log(myText[i].innerText);
 
@@ -373,19 +372,77 @@ console.log(myText[1].innerText);
 // }
 // Dùng vòng for in ra tất cả các phần tử trong mảng trên
 
-let newDiv = document.createElement("div");
-// newDiv.innerText = "Thẻ div mới được tạo";
-newDiv.style.fontWeight = "bold";
-newDiv.style.width = "600px";
-newDiv.style.height = "400px";
-newDiv.style.backgroundColor = "pink";
+///////////////////////////////////////////
+// let newDiv = document.createElement("div");
+// // newDiv.innerText = "Thẻ div mới được tạo";
+// newDiv.style.fontWeight = "bold";
+// newDiv.style.width = "300px";
+// newDiv.style.height = "200px";
+// newDiv.style.backgroundColor = "pink";
 
-document.body.appendChild(newDiv);
+// document.body.appendChild(newDiv);
 
-let newImage = document.createElement("img");
-newImage.src =
-  "https://codelearnstorage.s3.amazonaws.com/CodeCamp/CodeCamp/Upload/Course/c6b8d5cfe9ff4b56887e8751d37a1c61.png";
-newImage.style.width = "200px";
-newDiv.appendChild(newImage);
+// let newImage = document.createElement("img");
+// newImage.src =
+//   "https://codelearnstorage.s3.amazonaws.com/CodeCamp/CodeCamp/Upload/Course/c6b8d5cfe9ff4b56887e8751d37a1c61.png";
+// newImage.style.border = "2px dotted black";
+// newDiv.appendChild(newImage);
 
-let newA;
+// ////////////////////////
+// let width = prompt("Enter width");
+// let height = prompt("Enter height");
+// let backgroundColor = prompt("Enter backgroundColor");
+
+// let newRetangle = document.createElement("div");
+// newRetangle.style.width = width + "px"; // => "100px"
+// newRetangle.style.height = height + "px";
+// newRetangle.style.backgroundColor = backgroundColor;
+// document.body.appendChild(newRetangle);
+
+// console.log(width);
+//
+
+// let t = 5;
+
+// function sayHello() {
+//   // t = 10;
+//   console.log("Hello");
+// }
+
+// // 1 function chạy được khi gọi tên function
+// sayHello();
+
+// // console.log(t);
+
+function changeName() {
+  let newName = prompt("Enter new name");
+  let h1 = document.getElementById("myFirstElement");
+
+  // Khi tên mới khác với có sẵn thì chạy điều kiện if
+  if (newName != h1.innerText) {
+    h1.innerText = newName;
+
+    // Nếu tên mới bằng tên có sẵn thì chạy đến else
+  } else {
+    for (let current_name = h1.innerText; current_name == newName; ) {
+      // Check xem giá trị mà người nhập lại mới sau khi tên mới bị trùng
+      // với tên cũ
+      if (newName == h1.innerText) {
+        alert("Tên này được dùng rồi bạn vui lòng nhập lại");
+        newName = prompt("Enter name. Again"); // Tạo ra tên mới sau khi tên trước đấy nhập trùng với tên có sẽ từ ban đầu
+        h1.innerText = newName; // Gán tên mới vào thẻ h1
+      } else {
+        // Nó chạy đến else khi bước khai báo tên ở dòng 432 khác với tên có sẵn
+        h1.innerText = newName;
+        break; // Thằng này sẽ làm cho vòng for ko bị chạy liên tục
+      }
+    }
+  }
+}
+
+// let t = 10;
+
+// for (let i = 10; i == t; ) {
+//   console.log("Hello");
+//   break;
+// }
