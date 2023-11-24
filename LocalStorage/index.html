@@ -14,9 +14,21 @@
     </style>
   </head>
   <body>
-    <button onclick="changeColor()" id="changeColor">Change Color</button>
-    <button>Hide</button>
-    <div id="box"></div>
+    <!-- <button onclick="changeColor()" id="changeColor">Change Color</button>
+    <button id="hide" onclick="hide()">Hide</button>
+    <div id="box"></div> -->
+
+    <!-- LocalStorage:
+        key và value: phải để dạng string
+        - setItem(key, value)
+        - getItem(key)
+        - removeItem(key)
+    -->
+
+    <input type="text" id="key" placeholder="Enter Key ?" />
+    <input type="text" id="value" placeholder="Enter Value ?" />
+    <button id="add">Add</button>
+    <!-- <input type="text" id="value"> -->
 
     <script src="./app.js"></script>
   </body>
