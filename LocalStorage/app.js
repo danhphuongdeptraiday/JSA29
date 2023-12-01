@@ -53,3 +53,10 @@ add_btn.addEventListener("click", function () {
 
   input.value = "";
 });
+
+/**
+ * Nội dung bài: Lữu dữ liệu vào trong localStorage khi người dùng nhập đủ ô input key và input value
+ *
+ * Nâng cao: Chung ta sẽ chỉ cho người dung lưu thông tin khi 2 ô input ko đc để trống
+ *
+ */
