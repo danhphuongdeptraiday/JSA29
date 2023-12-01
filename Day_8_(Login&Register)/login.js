@@ -1,5 +1,6 @@
 let login_btn = document.getElementById("login_btn");
 let username = document.getElementById("username");
+let password = document.getElementById("password");
 
 let array_key_localStorage = Object.keys(localStorage); // get All Key from localStorage
 
@@ -7,7 +8,14 @@ login_btn.addEventListener("click", function () {
   let check = checkExistedUser(username.value); // true hoặc false
 
   if (check == true) {
-    alert("Tên này bạn nhập đúng rồi");
+    let password_existed_user_from_localStorage = localStorage.getItem(
+      username.value
+    );
+    if (password_existed_user_from_localStorage == password.value) {
+      alert("Đăng nhập thành công");
+    } else {
+      alert("Sai Password");
+    }
   } else {
     alert("Tên này chưa tồn tại");
   }
